@@ -1,1 +1,1 @@
-docs syntax design
+[docs] syntax design
