@@ -1,13 +1,13 @@
 {
-  "name": "@cicada-lang/inet-js",
-  "version": "0.2.8",
-  "repository": "github:cicada-lang/inet-js",
+  "name": "@cicada-lang/petri-net-js",
+  "version": "0.1.0",
+  "repository": "github:cicada-lang/petri-net-js",
   "main": "./lib/index.js",
   "files": [
     "lib"
   ],
   "bin": {
-    "inet-js": "bin/inet-js"
+    "petri-net-js": "bin/petri-net-js"
   },
   "scripts": {
     "build": "tsc",

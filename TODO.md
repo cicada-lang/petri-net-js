@@ -1,1 +1,2 @@
-setup ts project
+publish project
+docs syntax design
