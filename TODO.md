@@ -1,7 +1,10 @@
 # net
 
+Transition -- has input and output places
 Place
-Transition
+Choice
+
+apply/applyTransition
 
 # lang
 
