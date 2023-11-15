@@ -19,6 +19,6 @@ export type LetPlace = {
   "@type": "BlockStmt"
   "@kind": "LetPlace"
   name: string
-  t: Value
+  t: Exp
   span: Span
 }

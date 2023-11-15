@@ -1,16 +1,18 @@
-# net
-
-[connect] connectTransitionToInputPlaces(net: Net, transition: Transition, places: Array<Place>)
-[connect] connectTransitionToOutputPlaces(net: Net, transition: Transition, places: Array<Place>)
-
-[run] run
-
-- everytime a marking changes,
-  loop through and try to execute every transitions.
-
 # syntax
 
-parser
+[grammar] block_stmt
+[grammar] stmt
+[grammar] stmt -- begin
+
+[matcher] var
+[matcher] block
+[matcher] stmt
+
+# builtins
+
+`@send`
+
+`@receive` -- no closure must use named function
 
 # loader
 
@@ -20,6 +22,17 @@ fix `Loader` -- parse and execute
 
 fix run command
 add repl command
+parse and format command
+
+# net
+
+[connect] connectTransitionToInputPlaces(net: Net, transition: Transition, places: Array<Place>)
+[connect] connectTransitionToOutputPlaces(net: Net, transition: Transition, places: Array<Place>)
+
+[run] run
+
+- everytime a marking changes,
+  loop through and try to execute every transitions.
 
 # learn
 

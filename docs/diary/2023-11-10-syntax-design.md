@@ -41,7 +41,7 @@ begin {
 
   (input) -> [processComplaint] -> (output)
 
-  send(input, Complaint("xieyuheng"))
-  receive(output, print)
+  @send(input, Complaint("xieyuheng"))
+  @receive(output, print)
 }
 ```
