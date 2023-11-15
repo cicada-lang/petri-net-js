@@ -1,4 +1,3 @@
-copy command-line/ from inet-js
 setup the `run` command
 
 # net
