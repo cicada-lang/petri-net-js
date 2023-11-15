@@ -1,7 +1,3 @@
-# stmt
-
-Begin
-
 # net
 
 [net] TransitionEntry -- has `subnet`
