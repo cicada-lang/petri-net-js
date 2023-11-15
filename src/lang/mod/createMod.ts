@@ -1,24 +1,23 @@
 import { Loader } from "../../loader"
+import { Stmt } from "../stmt"
 // import { defineBuiltins } from "../builtins/defineBuiltins"
 // import { createChecking } from "../checking/createChecking"
 // import { createEnv } from "../env/createEnv"
-// import { Stmt } from "../stmt"
 import { Mod } from "./Mod"
 
 export function createMod(options: {
   url: URL
   text: string
-  // stmts: Array<Stmt>
+  stmts: Array<Stmt>
   loader: Loader
 }): Mod {
   const mod = {
     loader: options.loader,
     url: options.url,
     text: options.text,
-    // stmts: options.stmts,
+    stmts: options.stmts,
     definitions: new Map(),
     // builtins: new Map(),
-    // ruleEntries: new Map(),
     // requiredMods: new Map(),
   } as Mod
 

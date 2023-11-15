@@ -1,12 +1,14 @@
+# execute
+
+execute/
+
+fix `Loader` -- execute
+
 # builtins
 
 `@send`
 
 `@receive` -- no closure must use named function
-
-# loader
-
-fix `Loader` -- parse and execute
 
 # command-line
 

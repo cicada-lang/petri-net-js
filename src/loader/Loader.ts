@@ -1,7 +1,7 @@
 import { Fetcher } from "../fetcher"
 // import { execute } from "../lang/execute"
 import { Mod, createMod } from "../lang/mod"
-// import { parseStmts } from "../lang/syntax"
+import { parseStmts } from "../lang/syntax"
 
 export class Loader {
   loaded: Map<string, Mod> = new Map()
@@ -24,12 +24,12 @@ export class Loader {
         ? await this.fetcher.fetchText(url)
         : options.text
 
-    // const stmts = parseStmts(text)
+    const stmts = parseStmts(text)
     const mod = createMod({
       loader: this,
       url,
       text,
-      // stmts,
+      stmts,
     })
 
     this.loading.add(url.href)
