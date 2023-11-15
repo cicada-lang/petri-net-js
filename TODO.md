@@ -1,7 +1,5 @@
 # module system
 
-extract parameter/
-
 Place and Transition -- has modId
 
 Mod has definitions: Map<string, Definition>

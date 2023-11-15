@@ -1,5 +1,5 @@
 import { Mod } from "../mod"
-import { Parameter } from "../net"
+import { Parameter } from "../parameter"
 import { Span } from "../span"
 
 export type Definition = TransitionDefinition

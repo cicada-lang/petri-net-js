@@ -1,3 +1,4 @@
+import { Parameter } from "../parameter"
 import { Value } from "../value"
 
 /*
@@ -13,11 +14,6 @@ import { Value } from "../value"
 export type Net = {
   placeEntries: Map<string, PlaceEntry>
   transitionEntries: Map<string, TransitionEntry>
-}
-
-export type Parameter = {
-  name: string
-  t: Value
 }
 
 export type TransitionEntry = {
