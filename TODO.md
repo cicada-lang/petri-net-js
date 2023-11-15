@@ -1,20 +1,15 @@
 define
 evaluate
-execute -- call evaluate and define
+
+execute -- DefineTransition -- call evaluate and define
+execute -- Begin -- `createEnv` and run
+
+- [maybe] Mod -- has no env -- top level `evaluate`
 
 # builtins
 
 `@send`
-
 `@receive` -- no closure must use named function
-
-# command-line
-
-fix run command
-
-add repl command
-
-setup format command
 
 # net
 
@@ -47,3 +42,8 @@ Type -- simple type system
 # net
 
 [net] TransitionEntry -- has `subnet`
+
+# command-line
+
+add repl command
+setup format command
