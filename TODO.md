@@ -1,7 +1,5 @@
 # syntax
 
-[grammar] block_stmt
-
 [matcher] exp
 [matcher] stmt
 
