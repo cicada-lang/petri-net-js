@@ -31,6 +31,8 @@ parse and format command
 
 # learn
 
+> To get more examples.
+
 (1992) a-primer-in-petri-net-design.md
 (1985) petri-nets--an-introduction.md
 (1981) petri-net-theory-and-the-modeling-of-systems.md

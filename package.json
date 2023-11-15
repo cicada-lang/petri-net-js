@@ -13,8 +13,8 @@
     "build": "tsc",
     "build:watch": "tsc --watch",
     "test:ts": "vitest --dir src --threads false --run",
-    "test:petri-net-run": "test-runner snapshot 'node ./bin/petri-net-js run --no-color' 'std/**/*.p' --exclude 'std/**/*.error.p'",
-    "test:petri-net-run-error": "test-runner snapshot-error 'node ./bin/petri-net-js run --no-color' 'std/**/*.error.p'",
+    "test:petri-net-run": "test-runner snapshot 'node ./bin/petri-net-js run --no-color' 'tests/**/*.p' --exclude 'tests/**/*.error.p'",
+    "test:petri-net-run-error": "test-runner snapshot-error 'node ./bin/petri-net-js run --no-color' 'tests/**/*.error.p'",
     "test": "npm run test:ts && npm run test:petri-net-run && npm run test:petri-net-run-error",
     "format": "prettier src docs --write"
   },
