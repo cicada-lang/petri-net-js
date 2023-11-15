@@ -9,10 +9,10 @@ export function createMod(options: {
   url: URL
   // text: string
   // stmts: Array<Stmt>
-  // loader: Loader
+  loader: Loader
 }): Mod {
   const mod = {
-    // loader: options.loader,
+    loader: options.loader,
     url: options.url,
     // text: options.text,
     // stmts: options.stmts,

@@ -1,7 +1,6 @@
 import { Fetcher } from "../fetcher"
 // import { execute } from "../lang/execute"
-import { Mod } from "../lang/mod"
-import { createMod } from "../lang/mod/createMod"
+import { Mod, createMod } from "../lang/mod"
 // import { parseStmts } from "../lang/syntax"
 
 export class Loader {
@@ -27,7 +26,7 @@ export class Loader {
 
     // const stmts = parseStmts(text)
     const mod = createMod({
-      // loader: this,
+      loader: this,
       url,
       // text,
       // stmts,
