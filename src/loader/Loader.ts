@@ -28,7 +28,7 @@ export class Loader {
     const mod = createMod({
       loader: this,
       url,
-      // text,
+      text,
       // stmts,
     })
 
