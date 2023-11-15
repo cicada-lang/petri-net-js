@@ -1,11 +1,11 @@
 import { Span } from "../span"
 import { Exp } from "./Exp"
 
-export type BlockStmt = Change
+export type BlockStmt = Connect
 
-export type Change = {
+export type Connect = {
   "@type": "BlockStmt"
-  "@kind": "Change"
+  "@kind": "Connect"
   transition: Exp
   inputArgs: Array<Exp>
   outputArgs: Array<Exp>
