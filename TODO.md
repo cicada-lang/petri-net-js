@@ -1,8 +1,7 @@
-# execute
-
-execute/
-
 fix `Loader` -- execute
+define
+evaluate
+execute -- call evaluate and define
 
 # builtins
 
