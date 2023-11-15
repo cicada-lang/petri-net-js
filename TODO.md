@@ -1,7 +1,6 @@
 # syntax
 
-[matcher] exp
-[matcher] stmt
+[syntax] test parser by parse command
 
 # builtins
 
@@ -16,8 +15,10 @@ fix `Loader` -- parse and execute
 # command-line
 
 fix run command
+
 add repl command
-parse and format command
+
+setup format command
 
 # net
 

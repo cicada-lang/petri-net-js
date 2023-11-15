@@ -17,7 +17,7 @@ export const block_stmt = {
     ],
     "block_stmt:let_place": [
       '"place"',
-      { name: variable_name },
+      { name: "variable_name" },
       '":"',
       { t: "exp" },
     ],
