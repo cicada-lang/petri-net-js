@@ -6,7 +6,7 @@ import { nodeKey } from "../node/nodeKey"
 import { Place } from "../place"
 import { Value } from "../value"
 
-export function addPlace(net: Net, mod: Mod, name: string, t: Value): Node {
+export function addPlace(net: Net, mod: Mod, name: string, t: Value): Place {
   const modId = mod.url.href
   const id = createNodeId(name)
 
