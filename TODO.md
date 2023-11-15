@@ -1,6 +1,6 @@
 # stmt
 
-DefineTransition
+Begin
 
 # net
 

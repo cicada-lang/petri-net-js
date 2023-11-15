@@ -11,5 +11,6 @@ export type TransitionDefinition = {
   name: string
   inputParameters: Array<Parameter>
   outputParameters: Array<Parameter>
+  body: Array<BlockStmt>
   span: Span
 }
