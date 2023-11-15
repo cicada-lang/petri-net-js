@@ -2,8 +2,6 @@
 
 createNet
 
-Transition and Place has id and name
-
 createNode
 
 TransitionEntry -- has inputs and outputs places

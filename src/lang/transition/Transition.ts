@@ -1,4 +1,4 @@
 export type Transition = {
-  // input
-  // output
+  id: string
+  name: string
 }
