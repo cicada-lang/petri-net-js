@@ -1,6 +1,11 @@
 export const parameter = {
   $grammar: {
-    "parameter:normal": [{ name: "variable_name" }, '":"', { t: "exp" }],
+    "parameter:place": [
+      '"place"',
+      { name: "variable_name" },
+      '":"',
+      { t: "exp" },
+    ],
   },
 }
 

@@ -1,7 +1,3 @@
-# syntax
-
-[syntax] test parser by parse command
-
 # builtins
 
 `@send`

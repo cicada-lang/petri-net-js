@@ -4,7 +4,7 @@ import * as matchers from "../matchers"
 
 export function parameter_matcher(tree: pt.Tree): ParameterExp {
   return pt.matcher<ParameterExp>({
-    "parameter:normal": ({ name, t }) => ({
+    "parameter:place": ({ name, t }) => ({
       name: pt.str(name),
       t: matchers.exp_matcher(t),
       isPrincipal: false,

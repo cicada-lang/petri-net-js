@@ -4,7 +4,7 @@ import * as matchers from "../matchers"
 
 export function stmt_matcher(tree: pt.Tree): Stmt {
   return pt.matcher<Stmt>({
-    "stmt:function": (
+    "stmt:transition": (
       { name, inputParameters, outputParameters, body },
       { span },
     ) => ({
