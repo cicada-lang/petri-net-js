@@ -1,13 +1,14 @@
+import { Value } from "../value"
+
 /*
 
   A Petri net is a directed bipartite graph,
-  where nodes are partitioned to two kinds -- places and transitions.
+  where nodes are partitioned into two kinds
+  -- places and transitions.
 
   We implement a net by adjacency list.
 
 */
-
-import { Value } from "../value"
 
 export type Net = {
   placeEntries: Map<string, PlaceEntry>
@@ -33,4 +34,5 @@ export type PlaceEntry = {
   name: string
   inputs: Array<TransitionEntry>
   outputs: Array<TransitionEntry>
+  t: Value
 }

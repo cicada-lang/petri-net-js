@@ -1,11 +1,6 @@
 # net
 
-createNet
-
-createNode
-
-TransitionEntry -- has inputs and outputs places
-PlaceEntry
+net/createNet
 
 apply/applyTransition
 
