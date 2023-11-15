@@ -1,10 +1,12 @@
 # net
 
-net/createNet
+[net] PlaceEntry -- has queue of values
+[net] addPlace
+[net] addTransition
 
-apply/applyTransition
+[connect] connectTransitionToPlaces(net: Net, transition: Transition, place: Place)
 
-run
+[run] run
 
 - everytime a marking changes,
   loop through and try to execute every transitions.
