@@ -15,7 +15,7 @@ type Opts = {}
 export class Parse extends Command<Args, Opts> {
   name = "parse"
 
-  description = "Parse an inet program"
+  description = "Parse a Petri net program"
 
   args = { path: ty.string() }
 
@@ -26,7 +26,7 @@ export class Parse extends Command<Args, Opts> {
     return [
       `Parse a file:`,
       ``,
-      blue(`  ${runner.name} ${this.name} std/datatype/Nat.test.i`),
+      blue(`  ${runner.name} ${this.name} <file>`),
       ``,
     ].join("\n")
   }
