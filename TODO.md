@@ -1,7 +1,5 @@
 # module system
 
-Place and Transition -- has modId
-
 Mod has definitions: Map<string, Definition>
 
 # loader
