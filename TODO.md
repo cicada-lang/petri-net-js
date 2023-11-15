@@ -1,11 +1,8 @@
 # syntax
 
 [grammar] block_stmt
-[grammar] stmt
-[grammar] stmt -- begin
 
-[matcher] var
-[matcher] block
+[matcher] exp
 [matcher] stmt
 
 # builtins
