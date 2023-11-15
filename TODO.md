@@ -1,7 +1,3 @@
-# exp
-
-BlockStmt -- LetPlace -- add a place to current net, and bind the place to a variable
-
 # net
 
 [connect] connectTransitionToInputPlaces(net: Net, transition: Transition, places: Array<Place>)
@@ -11,10 +7,6 @@ BlockStmt -- LetPlace -- add a place to current net, and bind the place to a var
 
 - everytime a marking changes,
   loop through and try to execute every transitions.
-
-# net
-
-[net] TransitionEntry -- has `subnet`
 
 # syntax
 
@@ -29,6 +21,12 @@ fix `Loader` -- parse and execute
 fix run command
 add repl command
 
+# learn
+
+(1992) a-primer-in-petri-net-design.md
+(1985) petri-nets--an-introduction.md
+(1981) petri-net-theory-and-the-modeling-of-systems.md
+
 # choice
 
 [maybe] as one kind of `Transition`
@@ -38,3 +36,7 @@ add repl command
 Type -- simple type system
 
 - should we use structrual typing or ADT?
+
+# net
+
+[net] TransitionEntry -- has `subnet`
