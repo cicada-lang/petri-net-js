@@ -2,8 +2,6 @@
 
 extract parameter/
 
-Mod -- has definitions
-
 Place and Transition -- has modId
 
 Mod has definitions: Map<string, Definition>
