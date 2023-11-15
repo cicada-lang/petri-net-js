@@ -1,12 +1,5 @@
-# module system
-
-Mod has definitions: Map<string, Definition>
-
-# loader
-
-fix `Loader` -- parse and execute
-
-# command-line
+copy command-line/ from inet-js
+setup the `run` command
 
 # net
 
@@ -20,6 +13,19 @@ fix `Loader` -- parse and execute
 - everytime a marking changes,
   loop through and try to execute every transitions.
 
+# command-line
+
+fix run command
+add repl command
+
+# syntax
+
+parser
+
+# loader
+
+fix `Loader` -- parse and execute
+
 # choice
 
 [maybe] as one kind of `Transition`
@@ -29,9 +35,6 @@ fix `Loader` -- parse and execute
 env
 Stmt
 
-# syntax
-
-parser
 
 # type system
 
