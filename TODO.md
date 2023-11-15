@@ -1,10 +1,24 @@
 # net
 
-Transition -- has input and output places
-Place
-Choice
+createNet
+
+Transition and Place has id and name
+
+createNode
+
+TransitionEntry -- has inputs and outputs places
+PlaceEntry
 
 apply/applyTransition
+
+run
+
+- everytime a marking changes,
+  loop through and try to execute every transitions.
+
+# choice
+
+[maybe] as one kind of `Transition`
 
 # lang
 

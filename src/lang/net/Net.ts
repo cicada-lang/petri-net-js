@@ -1,7 +1,20 @@
-import { Place } from "../place"
-import { Transition } from "../transition"
-
 export type Net = {
-  places: Map<string, Place>
-  transitions: Map<string, Transition>
+  placeEntries: Map<string, PlaceEntry>
+  transitionEntries: Map<string, TransitionEntry>
+}
+
+export type TransitionEntry = {
+  id: string
+  name: string
+  inputs: Array<PlaceEntry>
+  outputs: Array<PlaceEntry>
+}
+
+export type PlaceEntry = {
+  id: string
+  name: string
+}
+
+export type ChoiceEntry = {
+  //
 }
