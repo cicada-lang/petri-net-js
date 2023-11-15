@@ -5,14 +5,14 @@ import * as matchers from "../matchers"
 export function block_stmt_matcher(tree: pt.Tree): BlockStmt {
   return pt.matcher<BlockStmt>({
     "block_stmt:connect": (
-      { input_args, transition, output_args },
+      { inputArgs, transition, outputArgs },
       { span },
     ) => ({
       "@type": "BlockStmt",
       "@kind": "Connect",
       transition: matchers.exp_matcher(transition),
-      inputArgs: matchers.args_matcher(input_args),
-      outputArgs: matchers.args_matcher(output_args),
+      inputArgs: matchers.args_matcher(inputArgs),
+      outputArgs: matchers.args_matcher(outputArgs),
       span,
     }),
     "block_stmt:let_place": ({ name, t }, { span }) => ({

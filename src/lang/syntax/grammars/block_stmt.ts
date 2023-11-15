@@ -2,7 +2,7 @@ export const block_stmt = {
   $grammar: {
     "block_stmt:connect": [
       "'('",
-      { input_args: "args" },
+      { inputArgs: "args" },
       "')'",
       "'-'",
       "'>'",
@@ -12,7 +12,7 @@ export const block_stmt = {
       "'-'",
       "'>'",
       "'('",
-      { output_args: "args" },
+      { outputArgs: "args" },
       "')'",
     ],
     "block_stmt:let_place": [
