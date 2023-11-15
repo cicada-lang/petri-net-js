@@ -1,5 +1,8 @@
-define
 evaluate
+evaluateParameters
+evaluateBlockStmt -- build net
+
+define
 
 execute -- DefineTransition -- call evaluate and define
 execute -- Begin -- `createEnv` and run
