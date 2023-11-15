@@ -1,3 +1,13 @@
+# module system
+
+Definition
+
+Mod -- has definitions
+
+Place and Transition -- has modId
+
+Mod has definitions: Map<string, Definition>
+
 # net
 
 [net] addPlace
@@ -22,12 +32,6 @@ Stmt
 # syntax
 
 parser
-
-# module system
-
-Definition
-
-Mod has definitions: Map<string, Definition>
 
 # type system
 
