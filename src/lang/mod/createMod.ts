@@ -7,14 +7,14 @@ import { Mod } from "./Mod"
 
 export function createMod(options: {
   url: URL
-  // text: string
+  text: string
   // stmts: Array<Stmt>
   loader: Loader
 }): Mod {
   const mod = {
     loader: options.loader,
     url: options.url,
-    // text: options.text,
+    text: options.text,
     // stmts: options.stmts,
     definitions: new Map(),
     // builtins: new Map(),

@@ -1,5 +1,3 @@
-[net] TransitionEntry -- has `subnet`
-
 # stmt
 
 DefinePlace
@@ -24,6 +22,10 @@ run {
   (c8) -> <checkProcessing> -> (c6, c7)
 }
 ```
+
+# net
+
+[net] TransitionEntry -- has `subnet`
 
 # exp
 
