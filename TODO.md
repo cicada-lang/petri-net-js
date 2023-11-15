@@ -1,5 +1,3 @@
-setup the `run` command
-
 # net
 
 [net] addPlace
