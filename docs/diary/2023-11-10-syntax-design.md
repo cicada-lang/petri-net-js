@@ -33,3 +33,15 @@ transition processComplaint(
   (c8) -> <checkProcessing> -> (c6, c7)
 }
 ```
+
+```
+begin {
+  place input: Complaint
+  place output: ComplaintArchive
+
+  (input) -> [processComplaint] -> (output)
+
+  send(input, Complaint("xieyuheng"))
+  receive(output, print)
+}
+```

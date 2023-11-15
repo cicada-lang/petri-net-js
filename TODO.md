@@ -1,10 +1,6 @@
-# net
-
-[net] TransitionEntry -- has `subnet`
-
 # exp
 
-BlockStmt -- LetPlace
+BlockStmt -- LetPlace -- add a place to current net, and bind the place to a variable
 
 # net
 
@@ -15,6 +11,10 @@ BlockStmt -- LetPlace
 
 - everytime a marking changes,
   loop through and try to execute every transitions.
+
+# net
+
+[net] TransitionEntry -- has `subnet`
 
 # syntax
 
