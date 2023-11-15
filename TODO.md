@@ -1,11 +1,17 @@
+[net] TransitionEntry -- has `subnet`
+
 # stmt
 
-Stmt
+DefinePlace
+
+DefineTransition
 
 Run
 
 ```
 run {
+  place input: Complaint = [{}, {}, ...]
+
   (input) -> [register] -> (c1, c2)
   (c1) -> [sendQuestionnaire] -> (c3)
   (c3) -> [processQuestionnaire] -> (c5)
@@ -18,6 +24,10 @@ run {
   (c8) -> <checkProcessing> -> (c6, c7)
 }
 ```
+
+# exp
+
+BlockStmt -- LetPlace
 
 # net
 
