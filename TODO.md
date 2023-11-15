@@ -1,6 +1,5 @@
 # net
 
-[net] addPlace
 [net] addTransition
 
 [connect] connectTransitionToPlaces(net: Net, transition: Transition, place: Place)

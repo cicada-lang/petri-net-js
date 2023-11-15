@@ -17,6 +17,7 @@ export type Net = {
 }
 
 export type TransitionEntry = {
+  modId: string
   id: string
   name: string
   inputParameters: Array<Parameter>
@@ -26,10 +27,11 @@ export type TransitionEntry = {
 }
 
 export type PlaceEntry = {
+  modId: string
   id: string
   name: string
-  inputs: Array<TransitionEntry>
-  outputs: Array<TransitionEntry>
   t: Value
   queue: Array<Value>
+  inputs: Array<TransitionEntry>
+  outputs: Array<TransitionEntry>
 }

@@ -1,0 +1,32 @@
+import { Mod } from "../mod"
+import { Net } from "../net"
+import { Node } from "../node"
+import { createNodeId } from "../node/createNodeId"
+import { nodeKey } from "../node/nodeKey"
+import { Place } from "../place"
+import { Value } from "../value"
+
+export function addPlace(net: Net, mod: Mod, name: string, t: Value): Node {
+  const modId = mod.url.href
+  const id = createNodeId(name)
+
+  const place: Place = {
+    "@type": "Value",
+    "@kind": "Place",
+    modId,
+    id,
+    name,
+  }
+
+  net.placeEntries.set(nodeKey(place), {
+    modId,
+    id,
+    name,
+    t,
+    queue: [],
+    inputs: [],
+    outputs: [],
+  })
+
+  return place
+}
