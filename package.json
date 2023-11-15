@@ -13,18 +13,16 @@
     "build": "tsc",
     "build:watch": "tsc --watch",
     "test:ts": "vitest --dir src --threads false --run",
-    "test:inet-parse": "test-runner test 'node ./bin/inet-js parse --no-color' 'std/**/*.i'",
-    "test:inet-format": "test-runner test 'node ./bin/inet-js format --no-color' 'std/**/*.i'",
-    "test:inet-run": "test-runner snapshot 'node ./bin/inet-js run --no-color' 'std/**/*.i' --exclude 'std/**/*.error.i'",
-    "test:inet-run-error": "test-runner snapshot-error 'node ./bin/inet-js run --no-color' 'std/**/*.error.i'",
-    "test": "npm run test:ts && npm run test:inet-run && npm run test:inet-run-error",
+    "test:petri-net-run": "test-runner snapshot 'node ./bin/petri-net-js run --no-color' 'std/**/*.p' --exclude 'std/**/*.error.p'",
+    "test:petri-net-run-error": "test-runner snapshot-error 'node ./bin/petri-net-js run --no-color' 'std/**/*.error.p'",
+    "test": "npm run test:ts && npm run test:petri-net-run && npm run test:petri-net-run-error",
     "format": "prettier src docs --write"
   },
   "devDependencies": {
-    "@types/node": "^20.8.10",
+    "@types/node": "^20.9.0",
     "@xieyuheng/test-runner": "^0.2.10",
-    "prettier": "^3.0.3",
-    "prettier-plugin-organize-imports": "^3.2.3",
+    "prettier": "^3.1.0",
+    "prettier-plugin-organize-imports": "^3.2.4",
     "typescript": "^5.2.2"
   },
   "dependencies": {

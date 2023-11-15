@@ -6,7 +6,9 @@ import process from "process"
 export class AppHome extends LocalFileStore {
   constructor() {
     super({
-      dir: process.env["PETRI_NET_HOME"] || Path.resolve(os.homedir(), ".petri-net"),
+      dir:
+        process.env["PETRI_NET_HOME"] ||
+        Path.resolve(os.homedir(), ".petri-net"),
     })
   }
 }
