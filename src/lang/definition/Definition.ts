@@ -1,3 +1,4 @@
+import { BlockStmt } from "../exp/BlockStmt"
 import { Mod } from "../mod"
 import { Parameter } from "../parameter"
 import { Span } from "../span"
