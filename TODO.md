@@ -1,6 +1,5 @@
 # net
 
-[net] PlaceEntry -- has queue of values
 [net] addPlace
 [net] addTransition
 

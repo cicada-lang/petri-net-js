@@ -35,4 +35,5 @@ export type PlaceEntry = {
   inputs: Array<TransitionEntry>
   outputs: Array<TransitionEntry>
   t: Value
+  queue: Array<Value>
 }
