@@ -1,6 +1,9 @@
-evaluate
+evaluateDefinition
 evaluateParameters
 evaluateBlockStmt -- build net
+
+evaluate -- Var
+evaluate -- Block
 
 define
 
@@ -16,8 +19,8 @@ execute -- Begin -- `createEnv` and run
 
 # net
 
-[connect] connectTransitionToInputPlaces(net: Net, transition: Transition, places: Array<Place>)
-[connect] connectTransitionToOutputPlaces(net: Net, transition: Transition, places: Array<Place>)
+[connect] connectTransitionToInputs(net: Net, transition: Transition, places: Array<Place>)
+[connect] connectTransitionToOutputs(net: Net, transition: Transition, places: Array<Place>)
 
 [run] run
 

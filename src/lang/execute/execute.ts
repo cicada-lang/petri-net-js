@@ -1,7 +1,7 @@
-import { checkFunction } from "../check/checkFunction"
 import { appendReport } from "../errors"
-import { evaluate, evaluateOne, evaluateParameters } from "../evaluate"
-import { Mod, define } from "../mod"
+// import { evaluate, evaluateOne, evaluateParameters } from "../evaluate"
+import { Mod } from "../mod"
+// import { Mod, define } from "../mod"
 import { Stmt } from "../stmt"
 
 export async function execute(mod: Mod, stmt: Stmt): Promise<null> {
