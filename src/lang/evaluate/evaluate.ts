@@ -16,19 +16,19 @@ export function evaluate(
   env: Env,
   exp: Exp,
   options: EvaluateOptions,
-): Value {
+): Array<Value> {
   try {
     switch (exp["@kind"]) {
       case "Var": {
         const found = env.locals.get(exp.name)
         if (found !== undefined) {
           env.locals.delete(exp.name)
-          return found
+          return [found]
         } else {
           throw new Error("TODO")
           // const definition = findDefinitionOrFail(mod, exp.name)
           // const value = evaluateDefinition(env, definition, options)
-          // return value
+          // return [value]
         }
       }
 

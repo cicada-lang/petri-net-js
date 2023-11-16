@@ -1,3 +1,4 @@
+evaluateBlock
 evaluateBlockStmt -- build net
 
 evaluate -- Var
@@ -11,6 +12,8 @@ execute -- Begin -- `createEnv` and run
 - [maybe] Mod -- has no env -- top level `evaluate`
 
 evaluateDefinition -- TransitionDefinition
+
+- return transition value
 
 # builtins
 
@@ -37,7 +40,13 @@ evaluateDefinition -- TransitionDefinition
 
 # choice
 
-[maybe] as one kind of `Transition`
+How to handle choice?
+
+- [maybe] As a subtype of transition, who to express subtype?
+
+- [maybe] As one kind of Transition
+
+  - Not ok, because Transition is a kind of Value
 
 # type system
 
