@@ -7,17 +7,17 @@ evaluateBlockStmt -- LetPlace
 - Add a place node to the current net,
   and bind the place to a variable.
 
-# builtins
-
-`@send`
-`@receive` -- no closure must use named function
-
 # net
 
 [run] run
 
 - everytime a marking changes,
   loop through and try to execute every transitions.
+
+# builtins
+
+`@send`
+`@receive` -- no closure must use named function
 
 # learn
 

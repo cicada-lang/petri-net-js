@@ -29,8 +29,8 @@ export function addTransition(
     name,
     inputParameters,
     outputParameters,
-    inputs: [],
-    outputs: [],
+    inputPlaceEntries: [],
+    outputPlaceEntries: [],
   })
 
   return transition

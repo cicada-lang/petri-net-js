@@ -22,8 +22,8 @@ export type TransitionEntry = {
   name: string
   inputParameters: Array<Parameter>
   outputParameters: Array<Parameter>
-  inputs: Array<PlaceEntry>
-  outputs: Array<PlaceEntry>
+  inputPlaceEntries: Array<PlaceEntry>
+  outputPlaceEntries: Array<PlaceEntry>
 }
 
 export type PlaceEntry = {
@@ -32,6 +32,6 @@ export type PlaceEntry = {
   name: string
   t: Value
   queue: Array<Value>
-  inputs: Array<TransitionEntry>
-  outputs: Array<TransitionEntry>
+  inputTransitionEntries: Array<TransitionEntry>
+  outputTransitionEntries: Array<TransitionEntry>
 }

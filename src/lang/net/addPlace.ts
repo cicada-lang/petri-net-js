@@ -1,6 +1,5 @@
 import { Mod } from "../mod"
 import { Net } from "../net"
-import { Node } from "../node"
 import { createNodeId } from "../node/createNodeId"
 import { nodeKey } from "../node/nodeKey"
 import { Place } from "../place"
@@ -24,8 +23,8 @@ export function addPlace(net: Net, mod: Mod, name: string, t: Value): Place {
     name,
     t,
     queue: [],
-    inputs: [],
-    outputs: [],
+    inputTransitionEntries: [],
+    outputTransitionEntries: [],
   })
 
   return place
