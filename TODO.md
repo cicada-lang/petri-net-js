@@ -1,8 +1,3 @@
-evaluateBlockStmt -- LetPlace
-
-- Add a place node to the current net,
-  and bind the place to a variable.
-
 # net
 
 [run] run

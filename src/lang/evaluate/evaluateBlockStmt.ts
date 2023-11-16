@@ -2,11 +2,12 @@ import {
   connectTransitionToInputs,
   connectTransitionToOutputs,
 } from "../connect"
-import { Env } from "../env"
+import { Env, defineLocals } from "../env"
 import { appendReport } from "../errors"
 import { BlockStmt } from "../exp/BlockStmt"
 import { formatBlockStmt } from "../exp/formatBlockStmt"
 import { Mod } from "../mod"
+import { addPlace } from "../net"
 import { Value, assertValueKind } from "../value"
 import { EvaluateOptions } from "./evaluate"
 import { evaluateOne } from "./evaluateOne"
@@ -37,10 +38,15 @@ export function evaluateBlockStmt(
 
         connectTransitionToInputs(env.net, transition, inputArgs)
         connectTransitionToOutputs(env.net, transition, outputArgs)
+
+        return null
       }
 
       case "LetPlace": {
-        throw new Error("TODO")
+        const t = evaluateOne(mod, env, stmt.t, options)
+        const place = addPlace(env.net, mod, stmt.name, t)
+        defineLocals(env, [stmt.name], [place])
+        return null
       }
     }
   } catch (error) {
