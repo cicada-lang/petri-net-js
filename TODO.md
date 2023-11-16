@@ -1,3 +1,7 @@
+# type system
+
+Type -- simple structrual type system -- for JSON
+
 # net
 
 [run] run
@@ -27,12 +31,6 @@ How to handle choice?
 - [maybe] As one kind of Transition
 
   - Not ok, because Transition is a kind of Value
-
-# type system
-
-Type -- simple type system
-
-- should we use structrual typing or ADT?
 
 # net
 
