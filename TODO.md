@@ -1,9 +1,4 @@
-execute -- DefineTransition -- call evaluate and define
 execute -- Begin -- `createEnv` and run
-
-- [maybe] Mod -- has no env -- top level `evaluate`
-
-
 
 [connect] connectTransitionToInputs(net: Net, transition: Transition, places: Array<Place>)
 [connect] connectTransitionToOutputs(net: Net, transition: Transition, places: Array<Place>)

@@ -2,7 +2,7 @@ import { Loader } from "../../loader"
 import { Stmt } from "../stmt"
 // import { defineBuiltins } from "../builtins/defineBuiltins"
 // import { createChecking } from "../checking/createChecking"
-// import { createEnv } from "../env/createEnv"
+import { createEnv } from "../env/createEnv"
 import { Mod } from "./Mod"
 
 export function createMod(options: {
@@ -19,9 +19,9 @@ export function createMod(options: {
     definitions: new Map(),
     // builtins: new Map(),
     // requiredMods: new Map(),
-  } as Mod
+  } as unknown as Mod
 
-  // mod.env = createEnv(mod)
+  mod.env = createEnv(mod)
   // mod.checking = createChecking()
 
   // defineBuiltins(mod)

@@ -1,14 +1,36 @@
 import { appendReport } from "../errors"
-// import { evaluate, evaluateOne, evaluateParameters } from "../evaluate"
-import { Mod } from "../mod"
-// import { Mod, define } from "../mod"
+import { EvaluateOptions, evaluateParameters } from "../evaluate"
+import { Mod, define } from "../mod"
 import { Stmt } from "../stmt"
 
 export async function execute(mod: Mod, stmt: Stmt): Promise<null> {
   try {
+    const options: EvaluateOptions = {}
+
     switch (stmt["@kind"]) {
       case "DefineTransition": {
-        console.log("[execute / DefineTransition] TODO")
+        const inputParameters = evaluateParameters(
+          mod,
+          mod.env,
+          stmt.inputParameters,
+          options,
+        )
+        const outputParameters = evaluateParameters(
+          mod,
+          mod.env,
+          stmt.outputParameters,
+          options,
+        )
+        define(mod, stmt.name, {
+          "@type": "Definition",
+          "@kind": "TransitionDefinition",
+          mod,
+          name: stmt.name,
+          inputParameters,
+          outputParameters,
+          span: stmt.span,
+          body: stmt.body,
+        })
         return null
       }
 
