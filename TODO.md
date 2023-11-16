@@ -1,5 +1,3 @@
-findDefinitionOrFail
-
 evaluate -- Var -- call findDefinitionOrFail
 
 evaluateBlockStmt -- Connect

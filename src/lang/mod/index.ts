@@ -1,3 +1,5 @@
 export * from "./Mod"
 export * from "./createMod"
 export * from "./define"
+export * from "./findDefinitionOrFail"
+export * from "./findDefinition"
