@@ -1,4 +1,3 @@
-evaluateDefinition
 evaluateBlockStmt -- build net
 
 evaluate -- Var
@@ -10,6 +9,8 @@ execute -- DefineTransition -- call evaluate and define
 execute -- Begin -- `createEnv` and run
 
 - [maybe] Mod -- has no env -- top level `evaluate`
+
+evaluateDefinition -- TransitionDefinition
 
 # builtins
 
