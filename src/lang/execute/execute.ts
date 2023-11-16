@@ -1,5 +1,5 @@
 import { appendReport } from "../errors"
-import { EvaluateOptions, evaluateParameters } from "../evaluate"
+import { EvaluateOptions, evaluateBlock, evaluateParameters } from "../evaluate"
 import { Mod, define } from "../mod"
 import { Stmt } from "../stmt"
 
@@ -35,7 +35,7 @@ export async function execute(mod: Mod, stmt: Stmt): Promise<null> {
       }
 
       case "Begin": {
-        console.log("[execute / Begin] TODO")
+        evaluateBlock(mod, mod.env, stmt.body, options)
         return null
       }
     }

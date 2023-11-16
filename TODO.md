@@ -1,5 +1,3 @@
-execute -- Begin -- `createEnv` and run
-
 [connect] connectTransitionToInputs(net: Net, transition: Transition, places: Array<Place>)
 [connect] connectTransitionToOutputs(net: Net, transition: Transition, places: Array<Place>)
 
