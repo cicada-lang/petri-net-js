@@ -1,14 +1,15 @@
-evaluateBlockStmt -- Connect
-evaluateBlockStmt -- LetPlace
-
 execute -- DefineTransition -- call evaluate and define
 execute -- Begin -- `createEnv` and run
 
 - [maybe] Mod -- has no env -- top level `evaluate`
 
-evaluateDefinition -- TransitionDefinition
 
-- return transition value
+
+[connect] connectTransitionToInputs(net: Net, transition: Transition, places: Array<Place>)
+[connect] connectTransitionToOutputs(net: Net, transition: Transition, places: Array<Place>)
+
+evaluateBlockStmt -- Connect
+evaluateBlockStmt -- LetPlace
 
 # builtins
 
@@ -16,9 +17,6 @@ evaluateDefinition -- TransitionDefinition
 `@receive` -- no closure must use named function
 
 # net
-
-[connect] connectTransitionToInputs(net: Net, transition: Transition, places: Array<Place>)
-[connect] connectTransitionToOutputs(net: Net, transition: Transition, places: Array<Place>)
 
 [run] run
 
