@@ -4,7 +4,7 @@ import { Exp, formatExp } from "../exp"
 import { Mod } from "../mod"
 // import { findDefinitionOrFail } from "../mod"
 import { Value } from "../value"
-// import { evaluateBlock } from "./evaluateBlock"
+import { evaluateBlock } from "./evaluateBlock"
 // import { evaluateDefinition } from "./evaluateDefinition"
 
 export interface EvaluateOptions {
@@ -33,8 +33,7 @@ export function evaluate(
       }
 
       case "Block": {
-        throw new Error("TODO")
-        // return evaluateBlock(mod, env, exp.body, options)
+        return evaluateBlock(mod, env, exp.body, options)
       }
     }
   } catch (error) {

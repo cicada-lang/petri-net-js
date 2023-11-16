@@ -1,10 +1,9 @@
+findDefinitionOrFail
+
+evaluate -- Var -- call findDefinitionOrFail
+
 evaluateBlockStmt -- Connect
 evaluateBlockStmt -- LetPlace
-
-evaluate -- Var
-evaluate -- Block
-
-define
 
 execute -- DefineTransition -- call evaluate and define
 execute -- Begin -- `createEnv` and run

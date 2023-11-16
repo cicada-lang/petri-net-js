@@ -10,7 +10,7 @@ export function evaluateBlock(
   env: Env,
   body: Array<BlockStmt>,
   options: EvaluateOptions,
-): Value {
+): Array<Value> {
   for (const [index, stmt] of body.entries()) {
     const values = evaluateBlockStmt(mod, env, stmt, options)
     if (values !== null) {
