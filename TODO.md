@@ -1,5 +1,5 @@
-evaluateBlock
-evaluateBlockStmt -- build net
+evaluateBlockStmt -- Connect
+evaluateBlockStmt -- LetPlace
 
 evaluate -- Var
 evaluate -- Block

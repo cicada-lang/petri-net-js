@@ -1,6 +1,6 @@
 export * from "./evaluate"
 export * from "./evaluateDefinition"
 export * from "./evaluateParameters"
-// export * from "./evaluateBlockStmt"
-// export * from "./evaluateBlock"
+export * from "./evaluateBlockStmt"
+export * from "./evaluateBlock"
 export * from "./evaluateOne"
