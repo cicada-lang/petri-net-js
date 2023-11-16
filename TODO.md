@@ -1,5 +1,3 @@
-findTransition & findTransitionEntryOrFail
-
 connectTransitionToInputs & connectTransitionToOutputs
 
 evaluateBlockStmt -- Connect
