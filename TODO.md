@@ -1,5 +1,4 @@
 evaluateDefinition
-evaluateParameters
 evaluateBlockStmt -- build net
 
 evaluate -- Var
