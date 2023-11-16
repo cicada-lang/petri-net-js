@@ -1,11 +1,10 @@
 import { Env } from "../env"
 import { appendReport } from "../errors"
 import { Exp, formatExp } from "../exp"
-import { Mod } from "../mod"
-// import { findDefinitionOrFail } from "../mod"
+import { Mod, findDefinitionOrFail } from "../mod"
 import { Value } from "../value"
 import { evaluateBlock } from "./evaluateBlock"
-// import { evaluateDefinition } from "./evaluateDefinition"
+import { evaluateDefinition } from "./evaluateDefinition"
 
 export interface EvaluateOptions {
   //
@@ -25,10 +24,9 @@ export function evaluate(
           env.locals.delete(exp.name)
           return [found]
         } else {
-          throw new Error("TODO")
-          // const definition = findDefinitionOrFail(mod, exp.name)
-          // const value = evaluateDefinition(env, definition, options)
-          // return [value]
+          const definition = findDefinitionOrFail(mod, exp.name)
+          const value = evaluateDefinition(env, definition, options)
+          return [value]
         }
       }
 

@@ -1,5 +1,3 @@
-evaluate -- Var -- call findDefinitionOrFail
-
 evaluateBlockStmt -- Connect
 evaluateBlockStmt -- LetPlace
 
