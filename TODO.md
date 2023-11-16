@@ -1,5 +1,3 @@
-formatPlace -- fix findPlaceEntryOrFail
-
 formatTransition
 
 findTransition & findTransitionEntryOrFail
