@@ -1,5 +1,3 @@
-formatTransition
-
 findTransition & findTransitionEntryOrFail
 
 connectTransitionToInputs & connectTransitionToOutputs

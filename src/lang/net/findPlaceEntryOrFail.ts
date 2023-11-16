@@ -1,4 +1,5 @@
-import { Place, formatPlace } from "../place"
+import { formatNode } from "../node"
+import { Place } from "../place"
 import { Net, PlaceEntry } from "./Net"
 import { findPlaceEntry } from "./findPlaceEntry"
 
@@ -9,7 +10,7 @@ export function findPlaceEntryOrFail(net: Net, place: Place): PlaceEntry {
       [
         `[findPlaceEntryOrFail] I can not find nodeEntry for node.`,
         ``,
-        `  place: ${formatPlace(net, place)}`,
+        `  place: (${formatNode(net, place)})`,
       ].join("\n"),
     )
   }
