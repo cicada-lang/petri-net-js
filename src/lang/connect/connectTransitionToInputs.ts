@@ -10,5 +10,9 @@ export function connectTransitionToInputs(
   const transitionEntry = findTransitionEntryOrFail(net, transition)
   const placeEntries = places.map((place) => findPlaceEntryOrFail(net, place))
 
-  //
+  transitionEntry.inputPlaceEntries = placeEntries
+
+  for (const placeEntry of placeEntries) {
+    placeEntry.outputTransitionEntries.push(transitionEntry)
+  }
 }

@@ -1,5 +1,3 @@
-connectTransitionToInputs & connectTransitionToOutputs
-
 evaluateBlockStmt -- Connect
 
 evaluateBlockStmt -- LetPlace
