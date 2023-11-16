@@ -1,5 +1,3 @@
-evaluateBlockStmt -- Connect
-
 evaluateBlockStmt -- LetPlace
 
 - Add a place node to the current net,

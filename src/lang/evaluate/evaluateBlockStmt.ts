@@ -1,9 +1,13 @@
+import {
+  connectTransitionToInputs,
+  connectTransitionToOutputs,
+} from "../connect"
 import { Env } from "../env"
 import { appendReport } from "../errors"
 import { BlockStmt } from "../exp/BlockStmt"
 import { formatBlockStmt } from "../exp/formatBlockStmt"
 import { Mod } from "../mod"
-import { Value } from "../value"
+import { Value, assertValueKind } from "../value"
 import { EvaluateOptions } from "./evaluate"
 import { evaluateOne } from "./evaluateOne"
 
@@ -17,13 +21,22 @@ export function evaluateBlockStmt(
     switch (stmt["@kind"]) {
       case "Connect": {
         const transition = evaluateOne(mod, env, stmt.transition, options)
-        const inputArgs = stmt.inputArgs.map((arg) =>
-          evaluateOne(mod, env, arg, options),
-        )
-        const outputArgs = stmt.outputArgs.map((arg) =>
-          evaluateOne(mod, env, arg, options),
-        )
-        throw new Error("TODO")
+        assertValueKind(transition, "Transition")
+
+        const inputArgs = stmt.inputArgs.map((arg) => {
+          const place = evaluateOne(mod, env, arg, options)
+          assertValueKind(place, "Place")
+          return place
+        })
+
+        const outputArgs = stmt.outputArgs.map((arg) => {
+          const place = evaluateOne(mod, env, arg, options)
+          assertValueKind(place, "Place")
+          return place
+        })
+
+        connectTransitionToInputs(env.net, transition, inputArgs)
+        connectTransitionToOutputs(env.net, transition, outputArgs)
       }
 
       case "LetPlace": {
