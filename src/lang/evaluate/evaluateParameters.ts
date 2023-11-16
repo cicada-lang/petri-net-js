@@ -2,7 +2,7 @@ import { Env } from "../env"
 import { Mod } from "../mod"
 import { Parameter, ParameterExp } from "../parameter"
 import { EvaluateOptions } from "./evaluate"
-import { evaluate } from "./evaluate"
+import { evaluateOne } from "./evaluateOne"
 
 export function evaluateParameters(
   mod: Mod,
@@ -12,6 +12,6 @@ export function evaluateParameters(
 ): Array<Parameter> {
   return parameterExps.map(({ name, t }) => ({
     name,
-    t: evaluate(mod, env, t, options),
+    t: evaluateOne(mod, env, t, options),
   }))
 }
