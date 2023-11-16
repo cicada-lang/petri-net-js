@@ -1,8 +1,17 @@
-[connect] connectTransitionToInputs(net: Net, transition: Transition, places: Array<Place>)
-[connect] connectTransitionToOutputs(net: Net, transition: Transition, places: Array<Place>)
+formatPlace -- fix findPlaceEntryOrFail
+
+formatTransition
+
+findTransition & findTransitionEntryOrFail
+
+connectTransitionToInputs & connectTransitionToOutputs
 
 evaluateBlockStmt -- Connect
+
 evaluateBlockStmt -- LetPlace
+
+- Add a place node to the current net,
+  and bind the place to a variable.
 
 # builtins
 
@@ -47,4 +56,5 @@ Type -- simple type system
 # command-line
 
 add repl command
+
 setup format command
