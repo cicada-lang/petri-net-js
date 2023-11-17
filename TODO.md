@@ -1,13 +1,17 @@
+# net
+
+[net] use vue `reactive` primitives
+
+[net] `react`
+
+- when we add a data into a place,
+  all the neighboring transitions are checked for preparedness,
+  prepared transitions are executed
+  -- let's not handle non-deterministic for now.
+
 # type system
 
 Type -- simple structrual type system -- for JSON
-
-# net
-
-[run] run
-
-- everytime a marking changes,
-  loop through and try to execute every transitions.
 
 # builtins
 
