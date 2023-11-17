@@ -1,11 +1,19 @@
+# type system
+
 DefineDatatype & DatatypeDefinition
 
 - `datatype <name>` -- to define trivial type for now
 - pass parser `tests/`
 
-`Begin` -- should call react
+# FFI
+
+primitive transition v.s. composed transition
+
+- design a FFI to JavaScript
 
 # net
+
+[net] `Begin` -- should call `react`
 
 [net] react.test.ts
 

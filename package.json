@@ -31,7 +31,6 @@
     "@vue/runtime-core": "^3.3.8",
     "@xieyuheng/command-line": "^0.0.13",
     "@xieyuheng/ty": "^0.1.26",
-    "events": "^3.3.0",
     "picocolors": "^1.0.0",
     "vitest": "^0.34.6"
   },
