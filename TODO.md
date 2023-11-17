@@ -1,8 +1,8 @@
 # net
 
-[net] use vue `reactive` primitives
+[net] `fireTransitionEntry` -- try to fire one transition entry
 
-[net] `react`
+[net] `run`
 
 - when we add a data into a place,
   all the neighboring transitions are checked for preparedness,

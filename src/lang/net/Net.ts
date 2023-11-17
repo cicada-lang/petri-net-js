@@ -1,4 +1,5 @@
 import { Parameter } from "../parameter"
+import { Task } from "../task"
 import { Value } from "../value"
 
 /*
@@ -24,6 +25,7 @@ export type TransitionEntry = {
   outputParameters: Array<Parameter>
   inputPlaceEntries: Array<PlaceEntry>
   outputPlaceEntries: Array<PlaceEntry>
+  task?: Task
 }
 
 export type PlaceEntry = {

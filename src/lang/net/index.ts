@@ -1,4 +1,5 @@
 export * from "./Net"
+export * from "./fireTransitionEntry"
 export * from "./createNet"
 export * from "./addPlace"
 export * from "./addTransition"
