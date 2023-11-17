@@ -1,6 +1,18 @@
+# syntax
+
+support JSON data
+
+`put` as a `BlockStmt`
+
+```
+put <place> <data>
+```
+
 # type system
 
-DefineDatatype & DatatypeDefinition
+[maybe] DefineInterface & InterfaceDefinition
+
+[maybe] DefineDatatype & DatatypeDefinition
 
 - `datatype <name>` -- to define trivial type for now
 - pass parser `tests/`
