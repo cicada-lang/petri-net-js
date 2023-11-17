@@ -1,6 +1,6 @@
-DefineType & TypeDefinition
+DefineDatatype & DatatypeDefinition
 
-- `type <name>` -- to define trivial type for now
+- `datatype <name>` -- to define trivial type for now
 - pass parser `tests/`
 
 # net
