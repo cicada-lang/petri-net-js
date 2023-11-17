@@ -1,3 +1,8 @@
+DefineType & TypeDefinition
+
+- `type <name>` -- to define trivial type for now
+- pass parser `tests/`
+
 # net
 
 [net] react.test.ts
