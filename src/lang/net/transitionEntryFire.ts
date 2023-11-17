@@ -2,7 +2,7 @@ import { TransitionEntry } from "./Net"
 
 export type FiringResult = "Fired" | "NotFired" | "FiringError"
 
-export async function fireTransitionEntry(
+export async function transitionEntryFire(
   transitionEntry: TransitionEntry,
 ): Promise<FiringResult> {
   if (!transitionEntry.task) return "NotFired"

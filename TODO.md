@@ -1,13 +1,10 @@
 # net
 
-[net] `react`
+[net] react.test.ts
 
-- when we add a data into a place,
-  all the neighboring transitions are checked for preparedness,
-  prepared transitions are executed
-  -- let's not handle non-deterministic for now.
+[net] `transitionEntryFire` -- put input back on file
 
-[net] transitionEntryPutOutputs -- error handling
+[net] `transitionEntryPutOutputs` -- error handling
 
 - task should have more information
 
