@@ -12,6 +12,9 @@ import { Value, assertValueKind } from "../value"
 import { EvaluateOptions } from "./evaluate"
 import { evaluateOne } from "./evaluateOne"
 
+// We use `null` to denote that this `BlockStmt`
+// should not be viewed as returned results of this block.
+
 export function evaluateBlockStmt(
   mod: Mod,
   env: Env,

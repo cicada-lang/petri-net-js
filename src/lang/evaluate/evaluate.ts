@@ -6,9 +6,13 @@ import { Value } from "../value"
 import { evaluateBlock } from "./evaluateBlock"
 import { evaluateDefinition } from "./evaluateDefinition"
 
+// `EvaluateOptions` can be used to denote different modes of evaluation.
+
 export interface EvaluateOptions {
   //
 }
+
+// We return `Array<Value>` to handle possible multiple return values.
 
 export function evaluate(
   mod: Mod,

@@ -3,6 +3,8 @@ import { EvaluateOptions, evaluateBlock, evaluateParameters } from "../evaluate"
 import { Mod, define } from "../mod"
 import { Stmt } from "../stmt"
 
+// We return `null` to late the type checker catch the uncovered switch cases.
+
 export async function execute(mod: Mod, stmt: Stmt): Promise<null> {
   try {
     const options: EvaluateOptions = {}

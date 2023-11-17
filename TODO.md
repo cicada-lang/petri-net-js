@@ -3,6 +3,8 @@ DefineDatatype & DatatypeDefinition
 - `datatype <name>` -- to define trivial type for now
 - pass parser `tests/`
 
+`Begin` -- should call react
+
 # net
 
 [net] react.test.ts
