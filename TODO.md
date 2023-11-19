@@ -1,3 +1,5 @@
+be able to import js modules
+
 # syntax
 
 support JSON data
