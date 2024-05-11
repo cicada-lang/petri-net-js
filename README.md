@@ -70,17 +70,6 @@ npm run test         # Run test
 - [Communication with automata, Carl Adam Petri, 1966 (the founding paper)](./docs/references/papers/1966-communication-with-automata.pdf).
 - [The Application of Petri Nets to Workflow Management, Wil van der Aalst, 1998](./docs/references/papers/1998-the-application-of-petri-nets-to-workflow-management.pdf).
 
-## Community
-
-GitHub:
-
-- Organization: [github.com/cicada-lang](https://github.com/cicada-lang)
-
-Telegram:
-
-- English chat group: [CicadaLanguage](https://t.me/CicadaLanguage)
-- Chinese chat group: [CicadaLanguageCN](https://t.me/CicadaLanguageCN)
-
 ## Contributions
 
 To make a contribution, fork this project and create a pull request.
