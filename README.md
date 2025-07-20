@@ -70,16 +70,6 @@ npm run test         # Run test
 - [Communication with automata, Carl Adam Petri, 1966 (the founding paper)](./docs/references/papers/1966-communication-with-automata.pdf).
 - [The Application of Petri Nets to Workflow Management, Wil van der Aalst, 1998](./docs/references/papers/1998-the-application-of-petri-nets-to-workflow-management.pdf).
 
-## Contributions
-
-To make a contribution, fork this project and create a pull request.
-
-Please read the [STYLE-GUIDE.md](STYLE-GUIDE.md) before you change the code.
-
-Remember to add yourself to [AUTHORS](AUTHORS).
-Your line belongs to you, you can write a little
-introduction to yourself but not too long.
-
 ## License
 
 [GPLv3](LICENSE)
